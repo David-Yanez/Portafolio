@@ -1,0 +1,37 @@
+.card-back {
+   transform: rotateY(180deg);
+}
+
+.card-front{
+    transform: rotateY(0deg); 
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.text-title {
+    color: #FFF;
+   /* background-color: #232323;*/
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+}

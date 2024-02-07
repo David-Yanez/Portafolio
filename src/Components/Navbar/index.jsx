@@ -9,8 +9,8 @@ export const Navbar = () => {
 
       <ul className='flex gap-8 mr-20 '>
         <li>Sobre mi</li>
-        <li>Habilidades</li>
         <li>Proyectos</li>
+        <li>Habilidades</li>
         <li>Contacto</li>
       </ul>
     </nav>
