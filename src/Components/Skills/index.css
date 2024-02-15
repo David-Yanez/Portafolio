@@ -35,3 +35,10 @@
    /* background-color: #232323;*/
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
 }
+
+.neumor {
+    border-radius: 65px;
+    background: linear-gradient(315deg, #5679aa, #48668f);
+    box-shadow:  -34px -34px 68px #3a5172,
+                 34px 34px 68px #6691cc;
+}
