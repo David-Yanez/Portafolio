@@ -1,5 +1,6 @@
 import React from 'react'
 import Meee from '../../assets/me.jpg'
+import './index.css'
 export const AboutMe = () => {
   //  <button className='mt-8 ml-40 border border-black rounded-md w-24'>Contacto</button>
 // bg-gradient-to-r from-emerald-500 to-emerald-900
@@ -11,7 +12,7 @@ export const AboutMe = () => {
         <img className=' w-full h-full  object-contain rounded-lg' src={Meee} alt='Foto David' />
       </figure>
       <span className='w-96'>
-        <h1 className=' text-4xl text-center text-white'>David Yánez</h1>
+        <h1 className=' text-6xl text-center text-white titulo'>David Yánez</h1>
         <h2 className='text-xl text-center text-white'>Desarrolador Web</h2>
         <p className='mt-8 text-white'>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
         <button
