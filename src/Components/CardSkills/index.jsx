@@ -8,7 +8,7 @@ export const CardSkills = (data) => {
 
   }
   return (
-    <div className=' rounded-xl  h-24 w-24 neumor'>
+    <div className=' rounded-xl  h-32 w-32 neumor'>
       <div className='card h-full w-full'>
         <div className='  card-inner rounded-lg h-full w-full'>
 

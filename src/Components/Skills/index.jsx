@@ -8,8 +8,8 @@ import { CardSkills } from '../CardSkills'
 export const Skills = () => {
   return (
     <div className='flex flex-col items-center'>
-      <p className=' text-center mt-10 subTitle'>Mis Habilidades</p>
-      <div className='flex gap-10  w-2/5 m-4 flex-wrap justify-center '>
+      <p className=' text-center my-20 subTitle'>Mis Habilidades</p>
+      <div className='flex gap-10  w-3/5 m-4 flex-wrap justify-center '>
 
         {
       skills.map((skill) => (
