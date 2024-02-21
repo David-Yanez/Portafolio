@@ -1,0 +1,7 @@
+.nav-item .active {
+    border-bottom: 3px solid black;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid black;
+}
