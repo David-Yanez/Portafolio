@@ -5,7 +5,7 @@ import './index.css'
 export const Navbar = () => {
   // from-emerald-400 to-cyan-400
   return (
-    <nav className='flex justify-between items-center p-4 w-full  fixed  z-10   bg-slate-500'>
+    <nav className='flex justify-between items-center p-4 w-full  fixed  z-10 top-0  bg-slate-500'>
       <ul>
         <Link to='about' spy smooth={50} offset={-200} duration={500}>
           <figure className='h-10 w-64 pl-8 cursor-pointer'>
