@@ -12,12 +12,12 @@ export const Card = (data) => {
       <div className='flex gap-2 text-white mt-2 p-2 w-full flex-wrap'>
         {
           data.tech.map((skill)=>(
-              <p className='border border-white p-1 rounded-lg bg-slate-600'>{skill}</p>
+              <p className='border border-white p-1 rounded-lg bg-slate-600' key={skill}>{skill}</p>
           ))
         }
         </div>
       <div className='flex justify-evenly mt-2 mb-2'>
-        <button className='border border-white p-1 rounded-lg '>Ir al sitio</button>
+        <button className='border border-white p-1 rounded-lg '><a href={data.link} target="_blank">Ir al sitio</a></button>
         <button className='border border-white p-1 rounded-lg'>Mas detalles</button>
       </div>
     </div>
