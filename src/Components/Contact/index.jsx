@@ -6,26 +6,26 @@ export const Contact = () => {
   }
 
   return (
-    <div className=' p-2  rounded-lg bg-slate-400 w-1/4 hover:shadow-[0_0_30px_1px_rgba(0,255,117,0.30)]   '>
+    <div className=' p-2  rounded-3xl bg-slate-400 w-1/4 hover:shadow-[0_0_50px_1px_rgba(0,98,224,0.60)]   '>
       <span className='flex flex-col items-center'>
 
-        <h2>David Yánez</h2>
-        <h3>Desarrollador Web</h3>
+        <h2 className='text-4xl'>David Yánez</h2>
+        <h3 className='text-lg'>Desarrollador Web</h3>
       </span>
 
-      <span className='flex mt-8 gap-2'>
-        <img src='assets/contac/mail.svg' className='w-6 h-6' alt='' />
+      <span className='flex mt-10 gap-2'>
+        <img src='assets/contac/mail.png' className='w-8 h-8' alt='' />
 
-        <input type='text' disabled='true' className=' bg-slate-500 rounded-md pl-2 ' value='luiis.daviid4@gmail.com' />
-        <figure className=' bg-blue-500 ml-2 rounded-md cursor-pointer' onClick={copy}><img src='assets/contac/copy.svg' className='w-6 h-6 p-0.5' alt='' /></figure>
+        <input type='text' disabled='true' className=' bg-slate-500 rounded-md pl-1 ' value='luiis.daviid4@gmail.com' />
+        <figure className='  ml-1 rounded-md cursor-pointer' onClick={copy}><img src='assets/contac/copiar.png' className='w-8 h-8 hover:w-10' alt='' /></figure>
       </span>
-      <span className='flex gap-2 mt-2'>
-        <img src='assets/contac/linke.svg' className='w-5 h-5' alt='' />
+      <span className='flex gap-2 mt-2 items-center'>
+        <img src='assets/contac/linke2.svg' className='w-8 h-8' alt='' />
 
-        <a href='https://tailwindcss.com' target='_blank' rel='noreferrer' className='ml-1'> David-Yanezz</a>
+        <a href='https://tailwindcss.com' target='_blank' rel='noreferrer' className='ml-1 underline'> David-Yanezz</a>
       </span>
 
-      <span className='flex justify-center mt-8'>
+      <span className='flex justify-center mt-10'>
         <button className='w-24 text-lg bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   p-2 rounded-xl hover:drop-shadow-2xl hover:shadow-[#7dd3fc] text-white'> ver CV</button>
       </span>
 

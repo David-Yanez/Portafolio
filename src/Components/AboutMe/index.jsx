@@ -1,7 +1,7 @@
 import React from 'react'
 import Meee from '../../assets/me.jpg'
 import './index.css'
-export const AboutMe = () => {
+export const AboutMe = ({ openModal, setOpenModal }) => {
   //  <button className='mt-8 ml-40 border border-black rounded-md w-24'>Contacto</button>
 // bg-gradient-to-r from-emerald-500 to-emerald-900
 // bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
@@ -20,6 +20,7 @@ export const AboutMe = () => {
         </p>
         <button
           class='text-lg mt-20 ml-40 w-28 h-12 text-white font-semibold   bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   rounded-lg shadow-lg hover:scale-105 duration-200 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] hover:cursor-pointer'
+          onClick={() => setOpenModal(!openModal)}
         >
           Contacto
         </button>
