@@ -27,7 +27,9 @@ function App () {
 
       </div>
       {openModal && (
-        <Modal>
+        <Modal
+          setOpenModal={setOpenModal}
+        >
           <Contact />
         </Modal>
       )}

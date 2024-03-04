@@ -6,7 +6,7 @@ export const Contact = () => {
   }
 
   return (
-    <div className=' p-2  rounded-3xl bg-slate-400 w-1/4 hover:shadow-[0_0_50px_1px_rgba(0,98,224,0.60)]   '>
+    <div className=' p-2  rounded-3xl bg-slate-400 w-1/4 hover:shadow-[0_0_50px_1px_rgba(0,98,224,0.60)] ' onClick={e => e.stopPropagation()}>
       <span className='flex flex-col items-center'>
 
         <h2 className='text-4xl'>David Yánez</h2>
@@ -26,7 +26,7 @@ export const Contact = () => {
       </span>
 
       <span className='flex justify-center mt-10'>
-        <button className='w-24 text-lg bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   p-2 rounded-xl hover:drop-shadow-2xl hover:shadow-[#7dd3fc] text-white'> ver CV</button>
+        <button className='w-24 text-lg bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   p-2 rounded-xl hover:drop-shadow-2xl hover:shadow-[#7dd3fc] text-white'> <a href='assets/CV/cv.pdf' target='_blank'>ver CV </a> </button>
       </span>
 
     </div>
