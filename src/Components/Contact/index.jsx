@@ -17,7 +17,7 @@ export const Contact = () => {
         <img src='assets/contac/mail.png' className='w-8 h-8' alt='' />
 
         <input type='text' disabled='true' className=' bg-slate-500 rounded-md pl-1 ' value='luiis.daviid4@gmail.com' />
-        <figure className='  ml-1 rounded-md cursor-pointer' onClick={copy}><img src='assets/contac/copiar.png' className='w-8 h-8 hover:w-10' alt='' /></figure>
+        <figure className='  ml-1 rounded-md cursor-pointer' onClick={copy}><img src='assets/contac/copiar.png' className='w-8 h-8 hover:scale-110' alt='' /></figure>
       </span>
       <span className='flex gap-2 mt-2 items-center'>
         <img src='assets/contac/linke2.svg' className='w-8 h-8' alt='' />

@@ -4,9 +4,9 @@ import { projects } from '../../Utils/projects'
 
 export const Projects = () => {
   return (
-    <div className=' mt-24 flex flex-col items-center' id='projects'>
+    <div className=' mt-24 flex flex-col items-center ' id='projects'>
       <p className='text-center  mb-10 subTitle'> Mis Proyectos </p>
-      <div className='flex gap-4'>
+      <div className='flex gap-6'>
         {
           projects.map((project) => (
             <Card
