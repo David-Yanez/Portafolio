@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 
-export const Card = (data) => {
+export const CardProject = (data) => {
   return (
 
     <div className='border rounded-lg border-white h-auto w-80  hover:scale-105 '>
@@ -19,7 +19,7 @@ export const Card = (data) => {
       </div>
       <div className='flex justify-evenly mt-2 mb-2'>
         <button className='border border-white p-1 rounded-lg '><a href={data.link} target='_blank' rel='noreferrer'>Ir al sitio</a></button>
-        <button className='border border-white p-1 rounded-lg'>Mas detalles</button>
+        <button className='border border-white p-1 rounded-lg' onClick={() => (data.setOpenModal(true), data.setRenderDetails(true))}>Mas detalles</button>
       </div>
     </div>
   )

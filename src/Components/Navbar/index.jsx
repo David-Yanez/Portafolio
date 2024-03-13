@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import './index.css'
 
-export const Navbar = ({ openModal, setOpenModal }) => {
+export const Navbar = ({ openModal, setOpenModal, setRenderDetails }) => {
   // from-emerald-400 to-cyan-400
   return (
     <nav className='flex justify-between items-center p-4 w-full  fixed  z-10 top-0  bg-slate-500'>
@@ -19,7 +19,7 @@ export const Navbar = ({ openModal, setOpenModal }) => {
         <li className='pt-2 text-lg nav-item'><Link to='about' spy smooth={50} offset={-100} duration={500}>Sobre mi</Link> </li>
         <li className='pt-2 text-lg nav-item'><Link to='projects' spy smooth={50} offset={-100} duration={500}>Proyectos</Link> </li>
         <li className='pt-2 text-lg nav-item'> <Link to='skills' spy smooth={50} offset={10} duration={500}>Habilidades</Link></li>
-        <li className='text-lg bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   p-2 rounded-xl hover:drop-shadow-2xl hover:shadow-[#7dd3fc]' onClick={() => setOpenModal(!openModal)}>Contacto</li>
+        <li className='text-lg bg-gradient-to-r from-sky-700 via-sky-800 to-blue-800   p-2 rounded-xl hover:drop-shadow-2xl hover:shadow-[#7dd3fc]' onClick={() => (setOpenModal(!openModal), setRenderDetails(false))}>Contacto</li>
       </ul>
     </nav>
   )

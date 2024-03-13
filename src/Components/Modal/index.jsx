@@ -4,7 +4,7 @@ import './index.css'
 
 export const Modal = ({ children, setOpenModal }) => {
   return createPortal(
-    <div className='modal' onClick={() => setOpenModal(false)}>
+    <div className='modal w-screen' onClick={() => setOpenModal(false)}>
       {children}
     </div>,
     document.getElementById('contact')
