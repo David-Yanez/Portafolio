@@ -32,6 +32,8 @@ function App () {
           openModal={openModal}
           setOpenModal={setOpenModal}
           setRenderDetails={setRenderDetails}
+          indexProjects={indexProjects}
+          setIndexProjects={setIndexProjects}
         />
         <Skills />
 
@@ -42,7 +44,7 @@ function App () {
           setOpenModal={setOpenModal}
         >
           {
-      renderDetails ? <CardDetails /> : <Contact />
+      renderDetails ? <CardDetails indexProjects={indexProjects} /> : <Contact />
     }
 
         </Modal>
