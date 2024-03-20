@@ -9,7 +9,7 @@ export const Skills = () => {
   return (
     <div className='flex flex-col items-center' id='skills'>
       <p className=' text-center my-20 subTitle'>Mis Habilidades</p>
-      <div className='flex gap-10  w-3/5 m-4 flex-wrap justify-center '>
+      <div className='flex gap-8 lg:gap-10 w-4/5  lg:w-3/5 m-4 flex-wrap justify-center '>
 
         {
       skills.map((skill) => (

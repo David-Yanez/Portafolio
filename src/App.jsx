@@ -17,7 +17,7 @@ function App () {
 
   return (
     <>
-      <div className='flex flex-col h-auto w-screen justify-center items-center bg-gradient-to-bl from-slate-700 via-slate-600 to-slate-700'>
+      <div className='flex flex-col h-auto  justify-center items-center bg-gradient-to-bl from-slate-700 via-slate-600 to-slate-700'>
         <Navbar
           openModal={openModal}
           setOpenModal={setOpenModal}

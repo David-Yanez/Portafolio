@@ -6,7 +6,7 @@ export const Projects = ({ openModal, setOpenModal, setRenderDetails, setIndexPr
   return (
     <div className=' mt-24 flex flex-col items-center ' id='projects'>
       <p className='text-center  mb-10 subTitle'> Mis Proyectos </p>
-      <div className='flex gap-6'>
+      <div className='flex gap-6 w-screen overflow-x-auto   lg:justify-center lg:overflow-visible'>
         {
 
           projects.map((project, indice) => (
