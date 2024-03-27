@@ -9,7 +9,7 @@ export const CardProject = (data) => {
   }
   return (
 
-    <div className='border rounded-lg border-white h-auto w-80  hover:scale-105 '>
+    <div className=' rounded-2xl  h-auto w-80  hover:scale-105  bg-[#48668f] [box-shadow:-34px_-34px_68px_#3a5172,_34px_34px_68px_#6691cc]'>
       <figure className='w-80 h-52 p-2'>
         <img className='w-full h-full object-full rounded-lg' src={`assets/portadas/${data.fig}`} alt={`Portada del proyecto ${data.name}`} />
       </figure>
@@ -18,13 +18,13 @@ export const CardProject = (data) => {
       <div className='flex gap-2 text-white mt-2 p-2 w-full flex-wrap justify-center'>
         {
           data.tech.slice(0, 3).map((skill) => (
-            <p className='border border-white p-1 rounded-lg bg-slate-600' key={skill}>{skill}</p>
+            <p className=' p-1 rounded-lg bg-slate-500' key={skill}>{skill}</p>
           ))
         }
       </div>
       <div className='flex justify-evenly mt-2 mb-2'>
-        <button className='border border-white p-1 rounded-lg '><a href={data.link} target='_blank' rel='noreferrer'>Ir al sitio</a></button>
-        <button className='border border-white p-1 rounded-lg' onClick={() => modalDetails()}>Mas detalles</button>
+        <button className='border text-white border-white p-1 rounded-lg bg-sky-800 '><a href={data.link} target='_blank' rel='noreferrer'>Ir al sitio</a></button>
+        <button className='border text-white border-white p-1 rounded-lg bg-blue-900' onClick={() => modalDetails()}>Mas detalles</button>
       </div>
     </div>
   )
